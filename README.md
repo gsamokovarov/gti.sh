@@ -9,7 +9,7 @@ Install
 -------
 
 ```sh
-curl https://raw.github.com/gsamokovarov/gti.py/master/gti > ~/bin/gti; chmod +x ~/bin/gti
+curl https://raw.github.com/gsamokovarov/gti.sh/master/gti > ~/bin/gti; chmod +x ~/bin/gti
 ```
 
 Requires Bash and bc.
