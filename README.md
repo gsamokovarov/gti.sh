@@ -1,9 +1,9 @@
-gti.py
+gti.sh
 ======
 
 Just a silly `git` launcher, basically. Inspired by `sl`.
 
-A port of the original [gti][] in Python.
+A port of the original [gti][] in Bash...
 
 Install
 -------
@@ -12,7 +12,7 @@ Install
 curl https://raw.github.com/gsamokovarov/gti.py/master/gti > ~/bin/gti; chmod +x ~/bin/gti
 ```
 
-Requires Python greater than `2.3`. Works on Python 3 too.
+Requires Bash and bc.
 
 Usage
 -----
@@ -33,4 +33,3 @@ suitability of this software for any purpose.  It is provided "as
 is" without express or implied warranty.
 
 [gti]: https://github.com/rwos/gti
-[.files]: https://github.com/gsamokovarov/.files
