@@ -63,5 +63,5 @@ for i in $(seq 0 $TERM_WIDTH); do
   sleep $SLEEP_DELAY
   clear_car $i
 done
-
+move_to_top
 exec "${GIT:-$GIT_NAME}" $@
