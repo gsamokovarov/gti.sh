@@ -11,7 +11,7 @@
 GIT_NAME=git
 GTI_SPEED=50
 TERM_WIDTH=$(tput cols)
-SLEEP_DELAY=$(echo "scale=3; ($TERM_WIDTH + $GTI_SPEED) / 10000" | bc)
+SLEEP_DELAY=$(echo "scale=3; ($TERM_WIDTH + $GTI_SPEED) / 10000.0" | bc)
 
 init_space() {
   echo -e "\n\n\n\n\n\n"
@@ -23,7 +23,7 @@ move_to_top() {
 
 line_at() {
   if [ $1 -gt 0 ]; then
-    echo -e "\033[$1C${2:0:$(expr $TERM_WIDTH - $1)}"
+    echo -e "\033[$1C${2:0:$(($TERM_WIDTH - $1))}"
   else
     echo "${2:0:$TERM_WIDTH}"
   fi
